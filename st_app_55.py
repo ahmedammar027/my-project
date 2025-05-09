@@ -214,7 +214,7 @@ if st.button("Predict case"):
                                 columns=['BMI', 'Smoking', 'AlcoholDrinking','Stroke','PhysicalHealth','MentalHealth','DiffWalking','Sex','AgeCategory',
                                    'Race',	'Diabetic',	'PhysicalActivity',	'GenHealth',	'SleepTime',	'Asthma',	'KidneyDisease',	'SkinCancer'])
 
- processed_data = preprocessor11.transform(input_data)
+    processed_data = preprocessor11.transform(input_data)
     prediction = xgb.predict(processed_data)[0]
     probability = xgb.predict_proba(processed_data)[0][1]
 
