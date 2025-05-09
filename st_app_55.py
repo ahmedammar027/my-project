@@ -162,10 +162,10 @@ fig.update_xaxes(title_text="Age", row=1, col=2)
 fig.update_yaxes(title_text="Probability Density", row=1, col=2)
 fig.update_xaxes(title_text="smoking count", row=2, col=1)
 
-return df, fig
 
 df, fig = load_data_and_create_figure()
 
+    
 # App interface
 st.title('Heart Disease Predictor')
 
